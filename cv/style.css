@@ -1,0 +1,365 @@
+:root {
+  --primary: #1a56db;
+  --primary-hover: #1e40af;
+  --text-main: #0f172a;
+  --text-body: #1e293b;
+  --text-muted: #4b5563;
+  --bg-page: #f8fafc;
+  --bg-card: #ffffff;
+  --border-color: #e2e8f0;
+  --border-subtle: #cbd5e1;
+  --nav-bg: #ffffff;
+  --badge-bg: #e0e7ff;
+  --badge-text: #3730a3;
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.08), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--bg-page);
+}
+
+body {
+  margin: 2rem auto;
+  padding: 2.5rem 3rem;
+  max-width: 880px;
+  background-color: var(--bg-card);
+  color: var(--text-body);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border-color);
+}
+
+.cv-container {
+  max-width: 100%;
+}
+
+/* TOP NAVIGATION BAR */
+.cv-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.nav-tabs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.nav-tab {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  background-color: var(--bg-page);
+  border: 1px solid var(--border-color);
+  transition: all 0.15s ease-in-out;
+}
+
+.nav-tab:hover {
+  color: var(--primary);
+  border-color: var(--primary);
+  background-color: #eff6ff;
+}
+
+.nav-tab.active {
+  color: #ffffff;
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.nav-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: #ffffff;
+  background-color: #0f172a;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.nav-download:hover {
+  background-color: #334155;
+  text-decoration: none;
+}
+
+/* CV HEADER */
+.cv-header {
+  margin-bottom: 2rem;
+}
+
+.cv-header h1 {
+  margin: 0 0 0.4rem 0;
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--text-main);
+  letter-spacing: -0.02em;
+}
+
+.cv-header .subtitle {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--primary);
+  margin-bottom: 0.6rem;
+}
+
+.cv-header .contact-row {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.cv-header .work-auth {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.6rem;
+  background-color: #f1f5f9;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: #334155;
+  border: 1px solid var(--border-color);
+}
+
+/* SECTION TITLES */
+h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1.5px solid var(--border-subtle);
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1.5px solid var(--border-subtle);
+}
+
+/* EXPERIENCE & ROLE ITEMS */
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.35rem;
+}
+
+.item-title {
+  font-weight: 700;
+  font-size: 1.02rem;
+  color: var(--text-main);
+}
+
+.item-company {
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.item-period {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-align: right;
+}
+
+.item-duty {
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--text-muted);
+  margin-bottom: 0.4rem;
+}
+
+/* LISTS */
+ul {
+  margin: 0.35rem 0 0.85rem 0;
+  padding-left: 1.35rem;
+}
+
+li {
+  margin-bottom: 0.35rem;
+  line-height: 1.55;
+}
+
+li strong {
+  color: var(--text-main);
+}
+
+/* TABLES (SKILLS, EDUCATION) */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 0.75rem;
+}
+
+td {
+  padding: 4px 0;
+  vertical-align: top;
+}
+
+td:first-child {
+  width: 160px;
+  padding-right: 1rem;
+}
+
+/* PUBLICATIONS */
+.pub-item {
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.pub-item:last-child {
+  border-bottom: none;
+}
+
+.pub-year {
+  font-weight: 700;
+  color: var(--primary);
+  min-width: 45px;
+  font-size: 1rem;
+}
+
+.pub-body {
+  flex: 1;
+}
+
+.pub-title {
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.2rem;
+}
+
+.pub-authors {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #374151;
+  margin-bottom: 0.2rem;
+}
+
+.pub-meta {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+/* LINKS & BADGES */
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code {
+  background-color: #f1f5f9;
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: #0f172a;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .cv-container {
+    padding: 1.5rem;
+    margin: 1rem auto;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+  }
+
+  .cv-nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav-tabs {
+    justify-content: stretch;
+  }
+
+  .nav-tab {
+    flex: 1;
+    text-align: center;
+  }
+
+  .nav-download {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .item-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.2rem;
+  }
+
+  .item-period {
+    text-align: left;
+  }
+
+  td:first-child {
+    width: auto;
+    display: block;
+    padding-bottom: 0;
+  }
+
+  td {
+    display: block;
+  }
+}
+
+/* PRINT STYLES */
+@media print {
+  body {
+    background-color: #ffffff;
+    font-size: 11pt;
+  }
+
+  .cv-container {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+  }
+
+  .cv-nav {
+    display: none !important;
+  }
+}
