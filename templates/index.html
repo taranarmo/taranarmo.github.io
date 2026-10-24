@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ meta.name }} — {{ meta.role }}</title>
+  <meta name="description" content="{{ meta.name }} — {{ meta.role }}. Data platforms, MLOps, NixOS, and environmental fluid dynamics research." />
+  <meta name="author" content="{{ meta.name }}" />
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="{{ meta.name }} — {{ meta.role }}" />
+  <meta property="og:description" content="Senior Data & MLOps Engineer · Environmental Fluid Dynamics Researcher based in Berlin, Germany." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://taranarmo.github.io/" />
+
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌊</text></svg>">
+</head>
+<body>
+  <!-- Navigation Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="/" class="brand-link">
+        <span class="brand-avatar">SV</span>
+        <span class="brand-name">{{ meta.name }}</span>
+      </a>
+      <nav class="site-nav">
+        <a href="#about-me">About</a>
+        <a href="#curriculum-vitae-downloads">CV</a>
+        <a href="#core-focus-technical-expertise">Focus</a>
+        <a href="#selected-publications">Publications</a>
+        <a href="#open-source-community">Open Source</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <span class="theme-icon light-icon">☀️</span>
+          <span class="theme-icon dark-icon">🌙</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="status-badge-row">
+          <span class="badge badge-accent">📍 {{ meta.location }}</span>
+          {% if meta.availability %}
+          <span class="badge badge-success">✨ {{ meta.availability }}</span>
+          {% endif %}
+        </div>
+        <h1 class="hero-title">{{ meta.name }}</h1>
+        <p class="hero-role">{{ meta.role }}</p>
+        <p class="hero-summary">
+          Architecting resilient, declarative <strong>Data Platforms</strong> and <strong>MLOps systems</strong> while modeling complex <strong>Physical Hydrodynamics</strong> and convective turbulence.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#curriculum-vitae-downloads" class="btn btn-primary btn-large">📄 View & Download CVs</a>
+          <a href="mailto:{{ meta.email }}" class="btn btn-secondary btn-large">✉️ Get in Touch</a>
+        </div>
+
+        <div class="social-chips">
+          {% if meta.github %}
+          <a href="{{ meta.github }}" target="_blank" rel="noopener noreferrer" class="chip">
+            <span class="chip-icon">🐙</span> GitHub
+          </a>
+          {% endif %}
+          {% if meta.linkedin %}
+          <a href="{{ meta.linkedin }}" target="_blank" rel="noopener noreferrer" class="chip">
+            <span class="chip-icon">💼</span> LinkedIn
+          </a>
+          {% endif %}
+          {% if meta.orcid %}
+          <a href="{{ meta.orcid }}" target="_blank" rel="noopener noreferrer" class="chip">
+            <span class="chip-icon">🔬</span> ORCID
+          </a>
+          {% endif %}
+          {% if meta.email %}
+          <a href="mailto:{{ meta.email }}" class="chip">
+            <span class="chip-icon">📧</span> {{ meta.email }}
+          </a>
+          {% endif %}
+          {% if meta.phone %}
+          <a href="tel:{{ meta.phone }}" class="chip">
+            <span class="chip-icon">📞</span> {{ meta.phone }}
+          </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Container (Rendered from Markdown) -->
+  <main class="main-content">
+    <div class="container">
+      <article class="prose">
+        {{ content | safe }}
+      </article>
+
+      <!-- Contact Card Section -->
+      <section id="contact" class="contact-section">
+        <h2>Get in Touch</h2>
+        <p>I am open to discuss freelance contracts, consulting engagements, or full-time senior technical roles.</p>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:{{ meta.email }}">{{ meta.email }}</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div>
+              <strong>Phone</strong>
+              <p><a href="tel:{{ meta.phone }}">{{ meta.phone }}</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <strong>Location & Status</strong>
+              <p>{{ meta.location }} · {{ meta.work_auth }}</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🌐</span>
+            <div>
+              <strong>Online Profiles</strong>
+              <p>
+                <a href="{{ meta.github }}" target="_blank" rel="noopener">GitHub</a> · 
+                <a href="{{ meta.linkedin }}" target="_blank" rel="noopener">LinkedIn</a> · 
+                <a href="{{ meta.orcid }}" target="_blank" rel="noopener">ORCID</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>© {{ build_year }} {{ meta.name }} · Berlin, Germany</p>
+      <p class="footer-meta">
+        Compiled reproducibly with <a href="https://nixos.org" target="_blank" rel="noopener">Nix</a> &amp; Markdown · 
+        <a href="/cv/cv.pdf">Industry CV</a> · 
+        <a href="/cv/academic_cv.pdf">Academic CV</a> · 
+        <a href="/cv/publications.pdf">Publications</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Theme toggle script -->
+  <script>
+    (function() {
+      const themeToggle = document.getElementById('theme-toggle');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+      
+      function setTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+      }
+
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        setTheme(savedTheme);
+      } else if (prefersDark.matches) {
+        setTheme('dark');
+      }
+
+      if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+          const currentTheme = document.documentElement.getAttribute('data-theme') || (prefersDark.matches ? 'dark' : 'light');
+          setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,80 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="generator" content="Pelican" />
-        <title>My Pelican Site</title>
-        <link rel="stylesheet" href="/theme/css/main.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sergei Volkov — Senior Data & MLOps Engineer · Environmental Fluid Dynamics Researcher</title>
+  <meta name="description" content="Sergei Volkov — Senior Data & MLOps Engineer · Environmental Fluid Dynamics Researcher. Data platforms, MLOps, NixOS, and environmental fluid dynamics research." />
+  <meta name="author" content="Sergei Volkov" />
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Sergei Volkov — Senior Data & MLOps Engineer · Environmental Fluid Dynamics Researcher" />
+  <meta property="og:description" content="Senior Data & MLOps Engineer · Environmental Fluid Dynamics Researcher based in Berlin, Germany." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://taranarmo.github.io/" />
+
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌊</text></svg>">
 </head>
+<body>
+  <!-- Navigation Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="/" class="brand-link">
+        <span class="brand-avatar">SV</span>
+        <span class="brand-name">Sergei Volkov</span>
+      </a>
+      <nav class="site-nav">
+        <a href="#about-me">About</a>
+        <a href="#curriculum-vitae-downloads">CV</a>
+        <a href="#core-focus-technical-expertise">Focus</a>
+        <a href="#selected-publications">Publications</a>
+        <a href="#open-source-community">Open Source</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+          <span class="theme-icon light-icon">☀️</span>
+          <span class="theme-icon dark-icon">🌙</span>
+        </button>
+      </nav>
+    </div>
+  </header>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="/">My Pelican Site</a></h1>
-                <nav><ul>
-                    <li><a href="/category/test.html">Test</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="status-badge-row">
+          <span class="badge badge-accent">📍 Berlin, Germany</span>
+          
+          <span class="badge badge-success">✨ Available for Freelance / Contract & Senior Roles</span>
+          
+        </div>
+        <h1 class="hero-title">Sergei Volkov</h1>
+        <p class="hero-role">Senior Data & MLOps Engineer · Environmental Fluid Dynamics Researcher</p>
+        <p class="hero-summary">
+          Architecting resilient, declarative <strong>Data Platforms</strong> and <strong>MLOps systems</strong> while modeling complex <strong>Physical Hydrodynamics</strong> and convective turbulence.
+        </p>
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="/my-second-post.html">My Second Post</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2023-01-02T00:00:00+01:00">
-                Published: Mon 02 January 2023
-        </abbr>
+        <div class="hero-actions">
+          <a href="#curriculum-vitae-downloads" class="btn btn-primary btn-large">📄 View & Download CVs</a>
+          <a href="mailto:taranarmo@gmail.com" class="btn btn-secondary btn-large">✉️ Get in Touch</a>
+        </div>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/sergei-volkov.html">Sergei Volkov</a>
-        </address>
-<p>In <a href="/category/test.html">Test</a>.</p>
+        <div class="social-chips">
+          
+          <a href="https://github.com/taranarmo" target="_blank" rel="noopener noreferrer" class="chip">
+            <span class="chip-icon">🐙</span> GitHub
+          </a>
+          
+          
+          <a href="https://www.linkedin.com/in/taranarmo" target="_blank" rel="noopener noreferrer" class="chip">
+            <span class="chip-icon">💼</span> LinkedIn
+          </a>
+          
+          
+          <a href="https://orcid.org/0000-0002-5385-1541" target="_blank" rel="noopener noreferrer" class="chip">
+            <span class="chip-icon">🔬</span> ORCID
+          </a>
+          
+          
+          <a href="mailto:taranarmo@gmail.com" class="chip">
+            <span class="chip-icon">📧</span> taranarmo@gmail.com
+          </a>
+          
+          
+          <a href="tel:+49 15751115112" class="chip">
+            <span class="chip-icon">📞</span> +49 15751115112
+          </a>
+          
+        </div>
+      </div>
+    </div>
+  </section>
 
-</footer><!-- /.post-info --><p>This is the content of my second post.</p>                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
+  <!-- Main Content Container (Rendered from Markdown) -->
+  <main class="main-content">
+    <div class="container">
+      <article class="prose">
+        <h2 id="about-me">About Me</h2>
+<p>I am a <strong>Senior Data &amp; MLOps Engineer</strong> and <strong>Environmental Fluid Dynamics Researcher</strong> based in Berlin. My career spans enterprise data platform architecture, declarative reproducible systems, and high-impact physical oceanography and limnology research.</p>
+<p>I bridge two disciplines:
+1. <strong>Production Software &amp; Data Engineering</strong>: Building robust, fault-tolerant data platforms, lakehouses, orchestration engines, and low-latency machine learning pipelines across AWS, GCP, and bare-metal environments.
+2. <strong>Computational Physical Science</strong>: Numerical modeling of convective turbulence, under-ice hydrodynamics, and thermal stratification with peer-reviewed publications and field acoustic telemetry (ADCP, thermistors).</p>
+<p>I believe in <strong>declarative reproducibility</strong>, <strong>strict data contracts</strong>, and <strong>infrastructure-as-code</strong>. As an active open-source contributor, I maintain key data engineering and scientific packages for the <strong>NixOS</strong> ecosystem (<code>nixpkgs</code>).</p>
+<hr />
+<h2 id="curriculum-vitae-downloads">Curriculum Vitae &amp; Downloads</h2>
+<p>Direct access to tailored CV formats and publication addenda, compiled directly from reproducible Typst sources:</p>
+<div class="cv-grid">
+  <div class="cv-card">
+    <div class="cv-card-header">
+      <span class="cv-badge">Industry</span>
+      <h3>Data & MLOps Engineering CV</h3>
+    </div>
+    <p>Comprehensive 2-page overview focused on Data Platforms, Lakehouses (Databricks, DuckDB, Spark), Airflow orchestration, MLOps, CI/CD, and NixOS maintenance.</p>
+    <div class="cv-card-actions">
+      <a href="/cv/cv.pdf" class="btn btn-primary" download>📄 Download PDF</a>
+      <a href="/cv/cv.html" class="btn btn-secondary">🌐 View HTML</a>
+    </div>
+  </div>
 
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="/my-first-post.html" rel="bookmark"
-                           title="Permalink to My First Post">My First Post</a></h1>
-                </header>
+  <div class="cv-card">
+    <div class="cv-card-header">
+      <span class="cv-badge">Academic & R&D</span>
+      <h3>Academic & Research CV</h3>
+    </div>
+    <p>3-page academic curriculum vitae covering physical hydrodynamics modeling (NWPI, IGB Berlin), peer-reviewed papers, research grants, teaching, and scientific computing.</p>
+    <div class="cv-card-actions">
+      <a href="/cv/academic_cv.pdf" class="btn btn-primary" download>🎓 Download PDF</a>
+      <a href="/cv/academic_cv.html" class="btn btn-secondary">🌐 View HTML</a>
+    </div>
+  </div>
 
-                <div class="entry-content">
-<footer class="post-info">
-        <abbr class="published" title="2023-01-01T00:00:00+01:00">
-                Published: Sun 01 January 2023
-        </abbr>
+  <div class="cv-card">
+    <div class="cv-card-header">
+      <span class="cv-badge">Publications</span>
+      <h3>Publications Addendum</h3>
+    </div>
+    <p>Single-page standalone publication record with 5 peer-reviewed journal articles, DOIs, citation details, and major international research projects.</p>
+    <div class="cv-card-actions">
+      <a href="/cv/publications.pdf" class="btn btn-primary" download>📚 Download PDF</a>
+      <a href="/cv/publications.html" class="btn btn-secondary">🌐 View HTML</a>
+    </div>
+  </div>
+</div>
 
-        <address class="vcard author">
-                By                         <a class="url fn" href="/author/sergei-volkov.html">Sergei Volkov</a>
-        </address>
-<p>In <a href="/category/test.html">Test</a>.</p>
+<hr />
+<h2 id="core-focus-technical-expertise">Core Focus &amp; Technical Expertise</h2>
+<div class="skills-grid">
+  <div class="skill-group">
+    <h3>Data Engineering & Lakehouses</h3>
+    <ul>
+      <li><strong>Engines & Query:</strong> Apache Spark (PySpark), Databricks, DuckDB, Trino, Snowflake, AWS Redshift, BigQuery</li>
+      <li><strong>Storage & Formats:</strong> Delta Lake, Apache Iceberg, Parquet, S3 / MinIO Lakehouses</li>
+      <li><strong>Transformation & Modeling:</strong> dbt (data build tool), SQL dialect optimization, Data Vault, Kimball Star Schema</li>
+      <li><strong>Streaming & Processing:</strong> Kafka, Event-driven telemetry processing, Polars, Pandas, DuckDB embedded analytics</li>
+    </ul>
+  </div>
 
-</footer><!-- /.post-info -->                <p>This is the content of my first post.</p>
-                <a class="readmore" href="/my-first-post.html">read more</a>
-                </div><!-- /.entry-content -->
-            </article></li>
-                </ol><!-- /#posts-list -->
-                </section><!-- /#content -->
-        <section id="extras" class="body">
-                <div class="blogroll">
-                        <h2>links</h2>
-                        <ul>
-                            <li><a href="https://getpelican.com/">Pelican</a></li>
-                        </ul>
-                </div><!-- /.blogroll -->
-        </section><!-- /#extras -->
+  <div class="skill-group">
+    <h3>MLOps, DevOps & Orchestration</h3>
+    <ul>
+      <li><strong>Workflow Orchestration:</strong> Apache Airflow (Nixpkgs package maintainer), Dagster, GitHub Actions, TeamCity</li>
+      <li><strong>Declarative Systems:</strong> Nix & NixOS reproducible environments, Docker, Podman, Containerization</li>
+      <li><strong>Infrastructure as Code:</strong> Terraform, AWS CloudFormation, Linux system administration, VPS clustering</li>
+      <li><strong>Model Deployment:</strong> MLflow, low-latency API serving, automated training/evaluation loops, A/B experimentation platforms</li>
+    </ul>
+  </div>
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
-                </address><!-- /#about -->
+  <div class="skill-group">
+    <h3>Scientific Computing & Simulation</h3>
+    <ul>
+      <li><strong>Domain Modeling:</strong> Computational Fluid Dynamics (CFD), Lake hydrodynamics (MIKE 3, OpenFOAM), Heat transfer</li>
+      <li><strong>Field Telemetry:</strong> Acoustic Doppler Current Profilers (ADCP), Thermistor chain telemetry, Time-series analysis</li>
+      <li><strong>Scientific Stack:</strong> Julia, Python (NumPy, SciPy, Matplotlib), MATLAB, Fortran, C++</li>
+      <li><strong>Computer Vision:</strong> Stereo-video tracking, underwater particle tracking velocimetry (IGB Berlin PycnoTrap project)</li>
+    </ul>
+  </div>
+</div>
 
-                <p>The theme is by <a rel="nofollow" href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+<hr />
+<h2 id="selected-publications">Selected Publications</h2>
+<p>Peer-reviewed journal articles in environmental fluid mechanics, convective turbulence, and limnology:</p>
+<ol>
+<li>
+<p><strong>Full Reynolds Stress Tensor of Convective Turbulence Estimated with Paired Acoustic Doppler Current Profilers</strong><br />
+<em>S. Bogdanov, G. Kirillin, S. Volkov, G. Zdorovennova</em><br />
+<em>Earth and Space Science Open Archive (ESSOAr)</em> (2021)<br />
+<a href="https://doi.org/10.1002/essoar.10507975.1">DOI: 10.1002/essoar.10507975.1</a></p>
+</li>
+<li>
+<p><strong>Fine scale structure of convective mixed layer in ice-covered lake</strong><br />
+<em>S. Volkov, S. Bogdanov, R. Zdorovennov, G. Zdorovennova, A. Terzhevik, N. Palshin, D. Bouffard, G. Kirillin</em><br />
+<em>Environmental Fluid Mechanics</em>, 19(5), 1151–1165 (2019)<br />
+<a href="https://doi.org/10.1007/s10652-018-9652-2">DOI: 10.1007/s10652-018-9652-2</a></p>
+</li>
+<li>
+<p><strong>Under-ice convection dynamics in a boreal lake</strong><br />
+<em>D. Bouffard, G. Zdorovennova, S. Bogdanov, T. Efremova, S. Lavanchy, N. Palshin, A. Terzhevik, L. Vinnå, S. Volkov, A. Wüest, R. Zdorovennov, H. Ulloa</em><br />
+<em>Inland Waters</em>, 9(2), 142–161 (2019)<br />
+<a href="https://doi.org/10.1080/20442041.2018.1533356">DOI: 10.1080/20442041.2018.1533356</a></p>
+</li>
+<li>
+<p><strong>Structure and dynamics of convective mixing in Lake Onego under ice-covered conditions</strong><br />
+<em>S. Bogdanov, G. Zdorovennova, S. Volkov, R. Zdorovennov, N. Palshin, T. Efremova, A. Terzhevik, D. Bouffard</em><br />
+<em>Inland Waters</em>, 9(2), 162–178 (2019)<br />
+<a href="https://doi.org/10.1080/20442041.2018.1551655">DOI: 10.1080/20442041.2018.1551655</a></p>
+</li>
+<li>
+<p><strong>Albedo of a Small Ice-Covered Boreal Lake: Daily, Meso-Scale and Interannual Variability on the Background of Regional Climate</strong><br />
+<em>G. Zdorovennova, N. Palshin, T. Efremova, R. Zdorovennov, G. Gavrilenko, S. Volkov, S. Bogdanov, A. Terzhevik</em><br />
+<em>Geosciences</em>, 8(6), 206 (2018)<br />
+<a href="https://doi.org/10.3390/geosciences8060206">DOI: 10.3390/geosciences8060206</a></p>
+</li>
+</ol>
+<hr />
+<h2 id="open-source-community">Open Source &amp; Community</h2>
+<p>I am a firm advocate of open source, reproducible software packaging, and open geospatial data:</p>
+<ul>
+<li><strong>NixOS (<code>nixpkgs</code>) Package Maintainer</strong>: Official package maintainer for critical data and scientific ecosystems:<ul>
+<li><code>apache-airflow</code> — Distributed workflow orchestration system</li>
+<li><code>julia</code> — High-performance technical and scientific computing language</li>
+<li><code>databricks-cli</code> — Official Databricks command-line client</li>
+<li><code>sqlline</code> — Database command-line tool</li>
+<li>Python ecosystem libraries and maintenance</li>
+</ul>
+</li>
+<li><strong>OpenStreetMap (OSM) Contributor</strong>: Mapping terrain, waterways, and infrastructure.</li>
+<li><strong>GitHub</strong>: Active repository hosting open-source flakes, CI/CD tools, and personal research experiments. Explore my code at <a href="https://github.com/taranarmo">github.com/taranarmo</a>.</li>
+</ul>
+<hr />
+<h2 id="professional-career-highlights">Professional Career Highlights</h2>
+<ul>
+<li><strong>Freelance Data / MLOps Engineer (AppIQ)</strong> <em>(2026 – Present)</em>: Architecting low-latency ML experimentation and automated feature evaluation platforms using Databricks, DuckDB, Airflow, and Terraform.</li>
+<li><strong>Data Engineer / Data Analyst (Zalando)</strong> <em>(2024 – 2025)</em>: Production Lakehouse data engineering on Databricks &amp; AWS S3, Spark optimization, complex Airflow DAG automation, and self-service analytics frameworks.</li>
+<li><strong>Data Analyst / Agritech Modeler (Crocus Labs)</strong> <em>(2023 – 2024)</em>: Photobiological time-series analytics, sensor telemetry pipelines, automated environmental chamber control models.</li>
+<li><strong>Doctoral Researcher (IGB Berlin)</strong> <em>(2021 – 2023)</em>: Limnological physics research on pycnocline particle trapping (PycnoTrap project); computer vision underwater tracking.</li>
+<li><strong>Researcher &amp; Numerical Modeler (NWPI)</strong> <em>(2016 – 2024)</em>: Hydrodynamic modeling of convective turbulence in boreal lakes; acoustic Doppler current profiling telemetry processing.</li>
+<li><strong>Data Engineer (Playrix)</strong> <em>(2018 – 2019)</em>: High-throughput mobile game telemetry pipelines in Python, ETL workflows, and analytics reporting.</li>
+</ul>
+      </article>
 
+      <!-- Contact Card Section -->
+      <section id="contact" class="contact-section">
+        <h2>Get in Touch</h2>
+        <p>I am open to discuss freelance contracts, consulting engagements, or full-time senior technical roles.</p>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <span class="contact-icon">📧</span>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:taranarmo@gmail.com">taranarmo@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📞</span>
+            <div>
+              <strong>Phone</strong>
+              <p><a href="tel:+49 15751115112">+49 15751115112</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">📍</span>
+            <div>
+              <strong>Location & Status</strong>
+              <p>Berlin, Germany · EU Blue Card holder (>2 yrs) · Unrestricted German Work Permit (incl. Freiberufler / Commercial)</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="contact-icon">🌐</span>
+            <div>
+              <strong>Online Profiles</strong>
+              <p>
+                <a href="https://github.com/taranarmo" target="_blank" rel="noopener">GitHub</a> · 
+                <a href="https://www.linkedin.com/in/taranarmo" target="_blank" rel="noopener">LinkedIn</a> · 
+                <a href="https://orcid.org/0000-0002-5385-1541" target="_blank" rel="noopener">ORCID</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>© 2026 Sergei Volkov · Berlin, Germany</p>
+      <p class="footer-meta">
+        Compiled reproducibly with <a href="https://nixos.org" target="_blank" rel="noopener">Nix</a> &amp; Markdown · 
+        <a href="/cv/cv.pdf">Industry CV</a> · 
+        <a href="/cv/academic_cv.pdf">Academic CV</a> · 
+        <a href="/cv/publications.pdf">Publications</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Theme toggle script -->
+  <script>
+    (function() {
+      const themeToggle = document.getElementById('theme-toggle');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+      
+      function setTheme(theme) {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem('theme', theme);
+      }
+
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        setTheme(savedTheme);
+      } else if (prefersDark.matches) {
+        setTheme('dark');
+      }
+
+      if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+          const currentTheme = document.documentElement.getAttribute('data-theme') || (prefersDark.matches ? 'dark' : 'light');
+          setTheme(currentTheme === 'dark' ? 'light' : 'dark');
+        });
+      }
+    })();
+  </script>
 </body>
 </html>
