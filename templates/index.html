@@ -110,6 +110,7 @@
               <p><a href="mailto:{{ meta.email }}">{{ meta.email }}</a></p>
             </div>
           </div>
+          {% if meta.phone %}
           <div class="contact-item">
             <span class="contact-icon">📞</span>
             <div>
@@ -117,6 +118,7 @@
               <p><a href="tel:{{ meta.phone }}">{{ meta.phone }}</a></p>
             </div>
           </div>
+          {% endif %}
           <div class="contact-item">
             <span class="contact-icon">📍</span>
             <div>

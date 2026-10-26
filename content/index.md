@@ -4,7 +4,6 @@ role: Senior Data & MLOps Engineer · Environmental Fluid Dynamics Researcher
 location: Berlin, Germany
 work_auth: EU Blue Card holder (>2 yrs) · Unrestricted German Work Permit (incl. Freiberufler / Commercial)
 email: taranarmo@gmail.com
-phone: "+49 15751115112"
 github: https://github.com/taranarmo
 linkedin: https://www.linkedin.com/in/taranarmo
 orcid: https://orcid.org/0000-0002-5385-1541
